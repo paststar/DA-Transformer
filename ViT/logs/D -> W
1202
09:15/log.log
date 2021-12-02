@@ -1,0 +1,603 @@
+09:15:31 ############### experiments setting ###############
+09:15:31 {'db_path': '../Dataset', 'baseline_path': 'AD_Baseline', 'source': 'dslr', 'target': 'webcam', 'workers': 4, 'gpu': '0', 'epochs': 200, 'batch_size': 64, 'lr': 0.01, 'l2_decay': 0.01, 'momentum': 0.9, 'nesterov': False}
+09:15:31 ###################################################
+09:15:33 ### epoch : 0 ###
+09:15:36 (train) class loss : 3.4711 domain loss : 0.0000 train time: 2.91s
+09:15:37 (eval) test accuracy: 3.77% eval time: 1.11s 
+09:15:37 ### epoch : 1 ###
+09:15:40 (train) class loss : 3.1638 domain loss : 0.0000 train time: 2.51s
+09:15:41 (eval) test accuracy: 5.16% eval time: 1.10s 
+09:15:41 ### epoch : 2 ###
+09:15:44 (train) class loss : 2.9729 domain loss : 0.0000 train time: 2.52s
+09:15:45 (eval) test accuracy: 4.28% eval time: 1.08s 
+09:15:45 ### epoch : 3 ###
+09:15:47 (train) class loss : 2.8428 domain loss : 0.0000 train time: 2.55s
+09:15:48 (eval) test accuracy: 5.28% eval time: 1.10s 
+09:15:48 ### epoch : 4 ###
+09:15:51 (train) class loss : 2.7327 domain loss : 0.0000 train time: 2.53s
+09:15:52 (eval) test accuracy: 5.53% eval time: 1.11s 
+09:15:52 ### epoch : 5 ###
+09:15:55 (train) class loss : 2.6127 domain loss : 0.0000 train time: 2.54s
+09:15:56 (eval) test accuracy: 5.53% eval time: 1.11s 
+09:15:56 ### epoch : 6 ###
+09:15:58 (train) class loss : 2.4745 domain loss : 0.0000 train time: 2.52s
+09:15:59 (eval) test accuracy: 7.17% eval time: 1.09s 
+09:15:59 ### epoch : 7 ###
+09:16:02 (train) class loss : 2.3948 domain loss : 0.0000 train time: 2.52s
+09:16:03 (eval) test accuracy: 5.66% eval time: 1.12s 
+09:16:03 ### epoch : 8 ###
+09:16:05 (train) class loss : 2.3203 domain loss : 0.0000 train time: 2.51s
+09:16:06 (eval) test accuracy: 5.28% eval time: 1.10s 
+09:16:06 ### epoch : 9 ###
+09:16:09 (train) class loss : 2.2112 domain loss : 0.0000 train time: 2.54s
+09:16:10 (eval) test accuracy: 5.66% eval time: 1.11s 
+09:16:10 ### epoch : 10 ###
+09:16:13 (train) class loss : 2.1494 domain loss : 0.0000 train time: 2.56s
+09:16:14 (eval) test accuracy: 6.29% eval time: 1.11s 
+09:16:14 ### epoch : 11 ###
+09:16:16 (train) class loss : 2.1231 domain loss : 0.0000 train time: 2.50s
+09:16:17 (eval) test accuracy: 6.67% eval time: 1.11s 
+09:16:17 ### epoch : 12 ###
+09:16:20 (train) class loss : 2.1289 domain loss : 0.0000 train time: 2.54s
+09:16:21 (eval) test accuracy: 4.91% eval time: 1.12s 
+09:16:21 ### epoch : 13 ###
+09:16:24 (train) class loss : 2.0821 domain loss : 0.0000 train time: 2.50s
+09:16:25 (eval) test accuracy: 5.79% eval time: 1.10s 
+09:16:25 ### epoch : 14 ###
+09:16:27 (train) class loss : 2.0218 domain loss : 0.0000 train time: 2.51s
+09:16:28 (eval) test accuracy: 6.29% eval time: 1.10s 
+09:16:28 ### epoch : 15 ###
+09:16:31 (train) class loss : 1.9699 domain loss : 0.0000 train time: 2.53s
+09:16:32 (eval) test accuracy: 6.29% eval time: 1.08s 
+09:16:32 ### epoch : 16 ###
+09:16:34 (train) class loss : 1.9215 domain loss : 0.0000 train time: 2.50s
+09:16:36 (eval) test accuracy: 6.42% eval time: 1.09s 
+09:16:36 ### epoch : 17 ###
+09:16:38 (train) class loss : 1.8725 domain loss : 0.0000 train time: 2.56s
+09:16:39 (eval) test accuracy: 5.79% eval time: 1.13s 
+09:16:39 ### epoch : 18 ###
+09:16:42 (train) class loss : 1.8505 domain loss : 0.0000 train time: 2.52s
+09:16:43 (eval) test accuracy: 7.30% eval time: 1.11s 
+09:16:43 ### epoch : 19 ###
+09:16:45 (train) class loss : 1.7987 domain loss : 0.0000 train time: 2.52s
+09:16:46 (eval) test accuracy: 6.04% eval time: 1.12s 
+09:16:46 ### epoch : 20 ###
+09:16:49 (train) class loss : 1.7855 domain loss : 0.0000 train time: 2.50s
+09:16:50 (eval) test accuracy: 5.91% eval time: 1.11s 
+09:16:50 ### epoch : 21 ###
+09:16:53 (train) class loss : 1.8236 domain loss : 0.0000 train time: 2.51s
+09:16:54 (eval) test accuracy: 5.91% eval time: 1.13s 
+09:16:54 ### epoch : 22 ###
+09:16:56 (train) class loss : 1.8222 domain loss : 0.0000 train time: 2.53s
+09:16:57 (eval) test accuracy: 6.04% eval time: 1.10s 
+09:16:57 ### epoch : 23 ###
+09:17:00 (train) class loss : 1.7791 domain loss : 0.0000 train time: 2.53s
+09:17:01 (eval) test accuracy: 5.41% eval time: 1.13s 
+09:17:01 ### epoch : 24 ###
+09:17:04 (train) class loss : 1.7468 domain loss : 0.0000 train time: 2.53s
+09:17:05 (eval) test accuracy: 5.66% eval time: 1.11s 
+09:17:05 ### epoch : 25 ###
+09:17:07 (train) class loss : 1.7305 domain loss : 0.0000 train time: 2.53s
+09:17:08 (eval) test accuracy: 6.54% eval time: 1.10s 
+09:17:08 ### epoch : 26 ###
+09:17:11 (train) class loss : 1.7312 domain loss : 0.0000 train time: 2.54s
+09:17:12 (eval) test accuracy: 7.92% eval time: 1.10s 
+09:17:12 ### epoch : 27 ###
+09:17:14 (train) class loss : 1.6762 domain loss : 0.0000 train time: 2.54s
+09:17:16 (eval) test accuracy: 6.16% eval time: 1.11s 
+09:17:16 ### epoch : 28 ###
+09:17:18 (train) class loss : 1.6634 domain loss : 0.0000 train time: 2.51s
+09:17:19 (eval) test accuracy: 9.06% eval time: 1.13s 
+09:17:19 ### epoch : 29 ###
+09:17:22 (train) class loss : 1.6291 domain loss : 0.0000 train time: 2.53s
+09:17:23 (eval) test accuracy: 7.30% eval time: 1.13s 
+09:17:23 ### epoch : 30 ###
+09:17:25 (train) class loss : 1.5632 domain loss : 0.0000 train time: 2.53s
+09:17:27 (eval) test accuracy: 8.68% eval time: 1.09s 
+09:17:27 ### epoch : 31 ###
+09:17:29 (train) class loss : 1.5492 domain loss : 0.0000 train time: 2.55s
+09:17:30 (eval) test accuracy: 11.95% eval time: 1.09s 
+09:17:30 ### epoch : 32 ###
+09:17:33 (train) class loss : 1.6055 domain loss : 0.0000 train time: 2.53s
+09:17:34 (eval) test accuracy: 5.79% eval time: 1.09s 
+09:17:34 ### epoch : 33 ###
+09:17:36 (train) class loss : 1.5928 domain loss : 0.0000 train time: 2.54s
+09:17:37 (eval) test accuracy: 7.30% eval time: 1.09s 
+09:17:37 ### epoch : 34 ###
+09:17:40 (train) class loss : 1.5457 domain loss : 0.0000 train time: 2.54s
+09:17:41 (eval) test accuracy: 8.93% eval time: 1.11s 
+09:17:41 ### epoch : 35 ###
+09:17:44 (train) class loss : 1.5330 domain loss : 0.0000 train time: 2.53s
+09:17:45 (eval) test accuracy: 9.31% eval time: 1.12s 
+09:17:45 ### epoch : 36 ###
+09:17:47 (train) class loss : 1.5363 domain loss : 0.0000 train time: 2.52s
+09:17:48 (eval) test accuracy: 11.07% eval time: 1.11s 
+09:17:48 ### epoch : 37 ###
+09:17:51 (train) class loss : 1.4886 domain loss : 0.0000 train time: 2.54s
+09:17:52 (eval) test accuracy: 8.93% eval time: 1.09s 
+09:17:52 ### epoch : 38 ###
+09:17:55 (train) class loss : 1.5235 domain loss : 0.0000 train time: 2.53s
+09:17:56 (eval) test accuracy: 7.42% eval time: 1.12s 
+09:17:56 ### epoch : 39 ###
+09:17:58 (train) class loss : 1.5988 domain loss : 0.0000 train time: 2.55s
+09:17:59 (eval) test accuracy: 7.55% eval time: 1.12s 
+09:17:59 ### epoch : 40 ###
+09:18:02 (train) class loss : 1.5225 domain loss : 0.0000 train time: 2.55s
+09:18:03 (eval) test accuracy: 7.67% eval time: 1.12s 
+09:18:03 ### epoch : 41 ###
+09:18:05 (train) class loss : 1.5053 domain loss : 0.0000 train time: 2.52s
+09:18:07 (eval) test accuracy: 6.04% eval time: 1.09s 
+09:18:07 ### epoch : 42 ###
+09:18:09 (train) class loss : 1.5197 domain loss : 0.0000 train time: 2.52s
+09:18:10 (eval) test accuracy: 10.82% eval time: 1.10s 
+09:18:10 ### epoch : 43 ###
+09:18:13 (train) class loss : 1.4528 domain loss : 0.0000 train time: 2.52s
+09:18:14 (eval) test accuracy: 6.54% eval time: 1.11s 
+09:18:14 ### epoch : 44 ###
+09:18:16 (train) class loss : 1.3932 domain loss : 0.0000 train time: 2.54s
+09:18:17 (eval) test accuracy: 11.95% eval time: 1.10s 
+09:18:17 ### epoch : 45 ###
+09:18:20 (train) class loss : 1.4133 domain loss : 0.0000 train time: 2.52s
+09:18:21 (eval) test accuracy: 12.70% eval time: 1.13s 
+09:18:21 ### epoch : 46 ###
+09:18:24 (train) class loss : 1.3766 domain loss : 0.0000 train time: 2.53s
+09:18:25 (eval) test accuracy: 7.04% eval time: 1.10s 
+09:18:25 ### epoch : 47 ###
+09:18:27 (train) class loss : 1.4195 domain loss : 0.0000 train time: 2.52s
+09:18:28 (eval) test accuracy: 10.44% eval time: 1.10s 
+09:18:28 ### epoch : 48 ###
+09:18:31 (train) class loss : 1.3167 domain loss : 0.0000 train time: 2.52s
+09:18:32 (eval) test accuracy: 10.57% eval time: 1.10s 
+09:18:32 ### epoch : 49 ###
+09:18:35 (train) class loss : 1.3227 domain loss : 0.0000 train time: 2.53s
+09:18:36 (eval) test accuracy: 13.21% eval time: 1.12s 
+09:18:36 ### epoch : 50 ###
+09:18:38 (train) class loss : 1.3691 domain loss : 0.0000 train time: 2.51s
+09:18:39 (eval) test accuracy: 9.56% eval time: 1.10s 
+09:18:39 ### epoch : 51 ###
+09:18:42 (train) class loss : 1.3419 domain loss : 0.0000 train time: 2.51s
+09:18:43 (eval) test accuracy: 9.31% eval time: 1.10s 
+09:18:43 ### epoch : 52 ###
+09:18:45 (train) class loss : 1.3600 domain loss : 0.0000 train time: 2.54s
+09:18:47 (eval) test accuracy: 11.07% eval time: 1.12s 
+09:18:47 ### epoch : 53 ###
+09:18:49 (train) class loss : 1.3127 domain loss : 0.0000 train time: 2.53s
+09:18:50 (eval) test accuracy: 12.96% eval time: 1.10s 
+09:18:50 ### epoch : 54 ###
+09:18:53 (train) class loss : 1.3682 domain loss : 0.0000 train time: 2.51s
+09:18:54 (eval) test accuracy: 8.81% eval time: 1.11s 
+09:18:54 ### epoch : 55 ###
+09:18:56 (train) class loss : 1.3294 domain loss : 0.0000 train time: 2.54s
+09:18:57 (eval) test accuracy: 10.94% eval time: 1.11s 
+09:18:57 ### epoch : 56 ###
+09:19:00 (train) class loss : 1.3298 domain loss : 0.0000 train time: 2.56s
+09:19:01 (eval) test accuracy: 10.82% eval time: 1.10s 
+09:19:01 ### epoch : 57 ###
+09:19:04 (train) class loss : 1.2739 domain loss : 0.0000 train time: 2.53s
+09:19:05 (eval) test accuracy: 10.06% eval time: 1.13s 
+09:19:05 ### epoch : 58 ###
+09:19:07 (train) class loss : 1.3038 domain loss : 0.0000 train time: 2.53s
+09:19:08 (eval) test accuracy: 10.82% eval time: 1.14s 
+09:19:08 ### epoch : 59 ###
+09:19:11 (train) class loss : 1.2972 domain loss : 0.0000 train time: 2.54s
+09:19:12 (eval) test accuracy: 12.96% eval time: 1.11s 
+09:19:12 ### epoch : 60 ###
+09:19:15 (train) class loss : 1.2849 domain loss : 0.0000 train time: 2.51s
+09:19:16 (eval) test accuracy: 12.83% eval time: 1.11s 
+09:19:16 ### epoch : 61 ###
+09:19:18 (train) class loss : 1.3717 domain loss : 0.0000 train time: 2.52s
+09:19:19 (eval) test accuracy: 6.54% eval time: 1.11s 
+09:19:19 ### epoch : 62 ###
+09:19:22 (train) class loss : 1.3287 domain loss : 0.0000 train time: 2.54s
+09:19:23 (eval) test accuracy: 9.94% eval time: 1.12s 
+09:19:23 ### epoch : 63 ###
+09:19:26 (train) class loss : 1.3413 domain loss : 0.0000 train time: 2.55s
+09:19:27 (eval) test accuracy: 8.68% eval time: 1.10s 
+09:19:27 ### epoch : 64 ###
+09:19:29 (train) class loss : 1.3083 domain loss : 0.0000 train time: 2.52s
+09:19:30 (eval) test accuracy: 12.45% eval time: 1.11s 
+09:19:30 ### epoch : 65 ###
+09:19:33 (train) class loss : 1.3073 domain loss : 0.0000 train time: 2.53s
+09:19:34 (eval) test accuracy: 10.82% eval time: 1.12s 
+09:19:34 ### epoch : 66 ###
+09:19:36 (train) class loss : 1.2912 domain loss : 0.0000 train time: 2.50s
+09:19:38 (eval) test accuracy: 8.81% eval time: 1.12s 
+09:19:38 ### epoch : 67 ###
+09:19:40 (train) class loss : 1.2427 domain loss : 0.0000 train time: 2.53s
+09:19:41 (eval) test accuracy: 13.58% eval time: 1.11s 
+09:19:41 ### epoch : 68 ###
+09:19:44 (train) class loss : 1.2354 domain loss : 0.0000 train time: 2.51s
+09:19:45 (eval) test accuracy: 9.56% eval time: 1.11s 
+09:19:45 ### epoch : 69 ###
+09:19:47 (train) class loss : 1.2397 domain loss : 0.0000 train time: 2.52s
+09:19:48 (eval) test accuracy: 11.07% eval time: 1.09s 
+09:19:48 ### epoch : 70 ###
+09:19:51 (train) class loss : 1.2745 domain loss : 0.0000 train time: 2.51s
+09:19:52 (eval) test accuracy: 11.32% eval time: 1.11s 
+09:19:52 ### epoch : 71 ###
+09:19:55 (train) class loss : 1.2833 domain loss : 0.0000 train time: 2.52s
+09:19:56 (eval) test accuracy: 9.69% eval time: 1.11s 
+09:19:56 ### epoch : 72 ###
+09:19:58 (train) class loss : 1.3320 domain loss : 0.0000 train time: 2.53s
+09:19:59 (eval) test accuracy: 11.07% eval time: 1.09s 
+09:19:59 ### epoch : 73 ###
+09:20:02 (train) class loss : 1.3860 domain loss : 0.0000 train time: 2.55s
+09:20:03 (eval) test accuracy: 8.81% eval time: 1.11s 
+09:20:03 ### epoch : 74 ###
+09:20:05 (train) class loss : 1.3236 domain loss : 0.0000 train time: 2.51s
+09:20:07 (eval) test accuracy: 12.33% eval time: 1.10s 
+09:20:07 ### epoch : 75 ###
+09:20:09 (train) class loss : 1.2554 domain loss : 0.0000 train time: 2.52s
+09:20:10 (eval) test accuracy: 10.19% eval time: 1.11s 
+09:20:10 ### epoch : 76 ###
+09:20:13 (train) class loss : 1.2480 domain loss : 0.0000 train time: 2.53s
+09:20:14 (eval) test accuracy: 12.45% eval time: 1.12s 
+09:20:14 ### epoch : 77 ###
+09:20:16 (train) class loss : 1.2047 domain loss : 0.0000 train time: 2.53s
+09:20:17 (eval) test accuracy: 12.83% eval time: 1.11s 
+09:20:17 ### epoch : 78 ###
+09:20:20 (train) class loss : 1.2627 domain loss : 0.0000 train time: 2.57s
+09:20:21 (eval) test accuracy: 10.94% eval time: 1.12s 
+09:20:21 ### epoch : 79 ###
+09:20:24 (train) class loss : 1.2465 domain loss : 0.0000 train time: 2.52s
+09:20:25 (eval) test accuracy: 9.69% eval time: 1.11s 
+09:20:25 ### epoch : 80 ###
+09:20:27 (train) class loss : 1.1996 domain loss : 0.0000 train time: 2.53s
+09:20:28 (eval) test accuracy: 11.45% eval time: 1.12s 
+09:20:28 ### epoch : 81 ###
+09:20:31 (train) class loss : 1.1885 domain loss : 0.0000 train time: 2.52s
+09:20:32 (eval) test accuracy: 9.94% eval time: 1.10s 
+09:20:32 ### epoch : 82 ###
+09:20:35 (train) class loss : 1.1940 domain loss : 0.0000 train time: 2.55s
+09:20:36 (eval) test accuracy: 13.08% eval time: 1.11s 
+09:20:36 ### epoch : 83 ###
+09:20:38 (train) class loss : 1.1616 domain loss : 0.0000 train time: 2.57s
+09:20:39 (eval) test accuracy: 12.20% eval time: 1.13s 
+09:20:39 ### epoch : 84 ###
+09:20:42 (train) class loss : 1.2271 domain loss : 0.0000 train time: 2.53s
+09:20:43 (eval) test accuracy: 10.06% eval time: 1.12s 
+09:20:43 ### epoch : 85 ###
+09:20:46 (train) class loss : 1.2356 domain loss : 0.0000 train time: 2.54s
+09:20:47 (eval) test accuracy: 10.31% eval time: 1.11s 
+09:20:47 ### epoch : 86 ###
+09:20:49 (train) class loss : 1.1959 domain loss : 0.0000 train time: 2.52s
+09:20:50 (eval) test accuracy: 11.95% eval time: 1.10s 
+09:20:50 ### epoch : 87 ###
+09:20:53 (train) class loss : 1.2415 domain loss : 0.0000 train time: 2.53s
+09:20:54 (eval) test accuracy: 11.19% eval time: 1.13s 
+09:20:54 ### epoch : 88 ###
+09:20:57 (train) class loss : 1.1941 domain loss : 0.0000 train time: 2.52s
+09:20:58 (eval) test accuracy: 12.58% eval time: 1.09s 
+09:20:58 ### epoch : 89 ###
+09:21:00 (train) class loss : 1.2225 domain loss : 0.0000 train time: 2.53s
+09:21:01 (eval) test accuracy: 12.20% eval time: 1.13s 
+09:21:01 ### epoch : 90 ###
+09:21:04 (train) class loss : 1.2999 domain loss : 0.0000 train time: 2.53s
+09:21:05 (eval) test accuracy: 13.58% eval time: 1.11s 
+09:21:05 ### epoch : 91 ###
+09:21:07 (train) class loss : 1.2723 domain loss : 0.0000 train time: 2.51s
+09:21:09 (eval) test accuracy: 12.33% eval time: 1.13s 
+09:21:09 ### epoch : 92 ###
+09:21:11 (train) class loss : 1.2751 domain loss : 0.0000 train time: 2.53s
+09:21:12 (eval) test accuracy: 13.84% eval time: 1.08s 
+09:21:12 ### epoch : 93 ###
+09:21:15 (train) class loss : 1.3405 domain loss : 0.0000 train time: 2.51s
+09:21:16 (eval) test accuracy: 11.19% eval time: 1.12s 
+09:21:16 ### epoch : 94 ###
+09:21:18 (train) class loss : 1.2431 domain loss : 0.0000 train time: 2.51s
+09:21:19 (eval) test accuracy: 14.47% eval time: 1.13s 
+09:21:19 ### epoch : 95 ###
+09:21:22 (train) class loss : 1.2430 domain loss : 0.0000 train time: 2.50s
+09:21:23 (eval) test accuracy: 12.70% eval time: 1.13s 
+09:21:23 ### epoch : 96 ###
+09:21:26 (train) class loss : 1.2153 domain loss : 0.0000 train time: 2.53s
+09:21:27 (eval) test accuracy: 11.32% eval time: 1.12s 
+09:21:27 ### epoch : 97 ###
+09:21:29 (train) class loss : 1.1492 domain loss : 0.0000 train time: 2.55s
+09:21:30 (eval) test accuracy: 12.45% eval time: 1.08s 
+09:21:30 ### epoch : 98 ###
+09:21:33 (train) class loss : 1.1966 domain loss : 0.0000 train time: 2.55s
+09:21:34 (eval) test accuracy: 10.44% eval time: 1.15s 
+09:21:34 ### epoch : 99 ###
+09:21:37 (train) class loss : 1.2023 domain loss : 0.0000 train time: 2.53s
+09:21:38 (eval) test accuracy: 10.19% eval time: 1.11s 
+09:21:38 ### epoch : 100 ###
+09:21:40 (train) class loss : 1.2683 domain loss : 0.0000 train time: 2.54s
+09:21:41 (eval) test accuracy: 13.08% eval time: 1.12s 
+09:21:41 ### epoch : 101 ###
+09:21:44 (train) class loss : 1.2433 domain loss : 0.0000 train time: 2.51s
+09:21:45 (eval) test accuracy: 11.57% eval time: 1.09s 
+09:21:45 ### epoch : 102 ###
+09:21:48 (train) class loss : 1.2129 domain loss : 0.0000 train time: 2.51s
+09:21:49 (eval) test accuracy: 11.70% eval time: 1.09s 
+09:21:49 ### epoch : 103 ###
+09:21:51 (train) class loss : 1.2623 domain loss : 0.0000 train time: 2.63s
+09:21:52 (eval) test accuracy: 11.19% eval time: 1.20s 
+09:21:52 ### epoch : 104 ###
+09:21:55 (train) class loss : 1.1947 domain loss : 0.0000 train time: 2.94s
+09:21:57 (eval) test accuracy: 12.08% eval time: 1.20s 
+09:21:57 ### epoch : 105 ###
+09:21:59 (train) class loss : 1.1592 domain loss : 0.0000 train time: 2.56s
+09:22:00 (eval) test accuracy: 13.96% eval time: 1.20s 
+09:22:00 ### epoch : 106 ###
+09:22:03 (train) class loss : 1.1886 domain loss : 0.0000 train time: 2.92s
+09:22:04 (eval) test accuracy: 11.32% eval time: 1.22s 
+09:22:04 ### epoch : 107 ###
+09:22:07 (train) class loss : 1.2476 domain loss : 0.0000 train time: 2.72s
+09:22:08 (eval) test accuracy: 13.21% eval time: 1.13s 
+09:22:08 ### epoch : 108 ###
+09:22:11 (train) class loss : 1.2159 domain loss : 0.0000 train time: 3.02s
+09:22:13 (eval) test accuracy: 13.71% eval time: 1.48s 
+09:22:13 ### epoch : 109 ###
+09:22:16 (train) class loss : 1.1754 domain loss : 0.0000 train time: 3.07s
+09:22:17 (eval) test accuracy: 10.31% eval time: 1.13s 
+09:22:17 ### epoch : 110 ###
+09:22:20 (train) class loss : 1.2395 domain loss : 0.0000 train time: 2.83s
+09:22:21 (eval) test accuracy: 10.69% eval time: 1.17s 
+09:22:21 ### epoch : 111 ###
+09:22:24 (train) class loss : 1.2162 domain loss : 0.0000 train time: 2.64s
+09:22:25 (eval) test accuracy: 12.58% eval time: 1.36s 
+09:22:25 ### epoch : 112 ###
+09:22:28 (train) class loss : 1.1936 domain loss : 0.0000 train time: 3.34s
+09:22:30 (eval) test accuracy: 12.70% eval time: 1.18s 
+09:22:30 ### epoch : 113 ###
+09:22:32 (train) class loss : 1.2324 domain loss : 0.0000 train time: 2.65s
+09:22:33 (eval) test accuracy: 10.19% eval time: 1.12s 
+09:22:33 ### epoch : 114 ###
+09:22:36 (train) class loss : 1.2568 domain loss : 0.0000 train time: 2.72s
+09:22:37 (eval) test accuracy: 11.82% eval time: 1.13s 
+09:22:37 ### epoch : 115 ###
+09:22:40 (train) class loss : 1.1591 domain loss : 0.0000 train time: 2.58s
+09:22:41 (eval) test accuracy: 11.95% eval time: 1.23s 
+09:22:41 ### epoch : 116 ###
+09:22:44 (train) class loss : 1.1896 domain loss : 0.0000 train time: 2.74s
+09:22:45 (eval) test accuracy: 15.09% eval time: 1.14s 
+09:22:45 ### epoch : 117 ###
+09:22:48 (train) class loss : 1.1426 domain loss : 0.0000 train time: 2.68s
+09:22:49 (eval) test accuracy: 13.21% eval time: 1.14s 
+09:22:49 ### epoch : 118 ###
+09:22:51 (train) class loss : 1.2131 domain loss : 0.0000 train time: 2.70s
+09:22:52 (eval) test accuracy: 11.45% eval time: 1.13s 
+09:22:52 ### epoch : 119 ###
+09:22:55 (train) class loss : 1.2341 domain loss : 0.0000 train time: 2.69s
+09:22:56 (eval) test accuracy: 12.83% eval time: 1.18s 
+09:22:56 ### epoch : 120 ###
+09:22:59 (train) class loss : 1.2609 domain loss : 0.0000 train time: 2.73s
+09:23:00 (eval) test accuracy: 10.94% eval time: 1.21s 
+09:23:00 ### epoch : 121 ###
+09:23:03 (train) class loss : 1.2943 domain loss : 0.0000 train time: 2.75s
+09:23:04 (eval) test accuracy: 12.33% eval time: 1.14s 
+09:23:04 ### epoch : 122 ###
+09:23:07 (train) class loss : 1.2478 domain loss : 0.0000 train time: 2.63s
+09:23:08 (eval) test accuracy: 12.96% eval time: 1.25s 
+09:23:08 ### epoch : 123 ###
+09:23:11 (train) class loss : 1.1721 domain loss : 0.0000 train time: 2.66s
+09:23:12 (eval) test accuracy: 12.96% eval time: 1.22s 
+09:23:12 ### epoch : 124 ###
+09:23:15 (train) class loss : 1.1725 domain loss : 0.0000 train time: 3.12s
+09:23:16 (eval) test accuracy: 7.67% eval time: 1.13s 
+09:23:16 ### epoch : 125 ###
+09:23:19 (train) class loss : 1.1645 domain loss : 0.0000 train time: 2.65s
+09:23:20 (eval) test accuracy: 14.09% eval time: 1.18s 
+09:23:20 ### epoch : 126 ###
+09:23:23 (train) class loss : 1.1887 domain loss : 0.0000 train time: 2.98s
+09:23:24 (eval) test accuracy: 8.18% eval time: 1.13s 
+09:23:24 ### epoch : 127 ###
+09:23:27 (train) class loss : 1.2526 domain loss : 0.0000 train time: 2.78s
+09:23:28 (eval) test accuracy: 11.19% eval time: 1.14s 
+09:23:28 ### epoch : 128 ###
+09:23:31 (train) class loss : 1.2543 domain loss : 0.0000 train time: 2.62s
+09:23:32 (eval) test accuracy: 11.82% eval time: 1.11s 
+09:23:32 ### epoch : 129 ###
+09:23:34 (train) class loss : 1.3292 domain loss : 0.0000 train time: 2.63s
+09:23:36 (eval) test accuracy: 12.08% eval time: 1.15s 
+09:23:36 ### epoch : 130 ###
+09:23:38 (train) class loss : 1.3115 domain loss : 0.0000 train time: 2.66s
+09:23:39 (eval) test accuracy: 11.19% eval time: 1.23s 
+09:23:39 ### epoch : 131 ###
+09:23:42 (train) class loss : 1.2452 domain loss : 0.0000 train time: 2.88s
+09:23:44 (eval) test accuracy: 12.20% eval time: 1.23s 
+09:23:44 ### epoch : 132 ###
+09:23:47 (train) class loss : 1.2293 domain loss : 0.0000 train time: 2.91s
+09:23:48 (eval) test accuracy: 12.08% eval time: 1.38s 
+09:23:48 ### epoch : 133 ###
+09:23:51 (train) class loss : 1.2448 domain loss : 0.0000 train time: 2.67s
+09:23:52 (eval) test accuracy: 7.80% eval time: 1.18s 
+09:23:52 ### epoch : 134 ###
+09:23:54 (train) class loss : 1.2426 domain loss : 0.0000 train time: 2.70s
+09:23:56 (eval) test accuracy: 13.08% eval time: 1.19s 
+09:23:56 ### epoch : 135 ###
+09:23:58 (train) class loss : 1.2023 domain loss : 0.0000 train time: 2.65s
+09:23:59 (eval) test accuracy: 12.08% eval time: 1.17s 
+09:23:59 ### epoch : 136 ###
+09:24:02 (train) class loss : 1.1959 domain loss : 0.0000 train time: 2.91s
+09:24:03 (eval) test accuracy: 10.82% eval time: 1.11s 
+09:24:03 ### epoch : 137 ###
+09:24:06 (train) class loss : 1.2329 domain loss : 0.0000 train time: 2.81s
+09:24:07 (eval) test accuracy: 9.06% eval time: 1.17s 
+09:24:07 ### epoch : 138 ###
+09:24:10 (train) class loss : 1.2025 domain loss : 0.0000 train time: 2.96s
+09:24:12 (eval) test accuracy: 12.58% eval time: 1.14s 
+09:24:12 ### epoch : 139 ###
+09:24:14 (train) class loss : 1.1913 domain loss : 0.0000 train time: 2.77s
+09:24:16 (eval) test accuracy: 15.22% eval time: 1.19s 
+09:24:16 ### epoch : 140 ###
+09:24:18 (train) class loss : 1.1871 domain loss : 0.0000 train time: 2.72s
+09:24:19 (eval) test accuracy: 12.33% eval time: 1.20s 
+09:24:19 ### epoch : 141 ###
+09:24:22 (train) class loss : 1.3053 domain loss : 0.0000 train time: 2.58s
+09:24:23 (eval) test accuracy: 10.69% eval time: 1.16s 
+09:24:23 ### epoch : 142 ###
+09:24:26 (train) class loss : 1.2948 domain loss : 0.0000 train time: 2.82s
+09:24:27 (eval) test accuracy: 11.57% eval time: 1.14s 
+09:24:27 ### epoch : 143 ###
+09:24:30 (train) class loss : 1.3429 domain loss : 0.0000 train time: 2.62s
+09:24:31 (eval) test accuracy: 11.95% eval time: 1.12s 
+09:24:31 ### epoch : 144 ###
+09:24:33 (train) class loss : 1.2548 domain loss : 0.0000 train time: 2.56s
+09:24:35 (eval) test accuracy: 10.94% eval time: 1.11s 
+09:24:35 ### epoch : 145 ###
+09:24:37 (train) class loss : 1.2212 domain loss : 0.0000 train time: 2.57s
+09:24:38 (eval) test accuracy: 13.08% eval time: 1.12s 
+09:24:38 ### epoch : 146 ###
+09:24:41 (train) class loss : 1.1585 domain loss : 0.0000 train time: 2.53s
+09:24:42 (eval) test accuracy: 11.32% eval time: 1.12s 
+09:24:42 ### epoch : 147 ###
+09:24:44 (train) class loss : 1.1681 domain loss : 0.0000 train time: 2.58s
+09:24:46 (eval) test accuracy: 15.60% eval time: 1.16s 
+09:24:46 ### epoch : 148 ###
+09:24:48 (train) class loss : 1.2028 domain loss : 0.0000 train time: 2.82s
+09:24:50 (eval) test accuracy: 9.69% eval time: 1.13s 
+09:24:50 ### epoch : 149 ###
+09:24:52 (train) class loss : 1.2404 domain loss : 0.0000 train time: 2.57s
+09:24:53 (eval) test accuracy: 12.70% eval time: 1.13s 
+09:24:53 ### epoch : 150 ###
+09:24:56 (train) class loss : 1.2518 domain loss : 0.0000 train time: 2.59s
+09:24:57 (eval) test accuracy: 12.33% eval time: 1.16s 
+09:24:57 ### epoch : 151 ###
+09:25:00 (train) class loss : 1.1449 domain loss : 0.0000 train time: 2.84s
+09:25:01 (eval) test accuracy: 15.35% eval time: 1.27s 
+09:25:01 ### epoch : 152 ###
+09:25:04 (train) class loss : 1.1402 domain loss : 0.0000 train time: 2.80s
+09:25:05 (eval) test accuracy: 14.21% eval time: 1.17s 
+09:25:05 ### epoch : 153 ###
+09:25:08 (train) class loss : 1.2200 domain loss : 0.0000 train time: 2.75s
+09:25:09 (eval) test accuracy: 9.81% eval time: 1.20s 
+09:25:09 ### epoch : 154 ###
+09:25:12 (train) class loss : 1.1818 domain loss : 0.0000 train time: 2.92s
+09:25:13 (eval) test accuracy: 12.58% eval time: 1.17s 
+09:25:13 ### epoch : 155 ###
+09:25:16 (train) class loss : 1.1938 domain loss : 0.0000 train time: 2.63s
+09:25:17 (eval) test accuracy: 15.47% eval time: 1.12s 
+09:25:17 ### epoch : 156 ###
+09:25:19 (train) class loss : 1.2532 domain loss : 0.0000 train time: 2.50s
+09:25:21 (eval) test accuracy: 11.07% eval time: 1.11s 
+09:25:21 ### epoch : 157 ###
+09:25:23 (train) class loss : 1.2044 domain loss : 0.0000 train time: 2.52s
+09:25:24 (eval) test accuracy: 13.08% eval time: 1.12s 
+09:25:24 ### epoch : 158 ###
+09:25:27 (train) class loss : 1.2371 domain loss : 0.0000 train time: 2.52s
+09:25:28 (eval) test accuracy: 11.32% eval time: 1.09s 
+09:25:28 ### epoch : 159 ###
+09:25:30 (train) class loss : 1.3388 domain loss : 0.0000 train time: 2.52s
+09:25:31 (eval) test accuracy: 12.96% eval time: 1.09s 
+09:25:31 ### epoch : 160 ###
+09:25:34 (train) class loss : 1.2032 domain loss : 0.0000 train time: 2.51s
+09:25:35 (eval) test accuracy: 11.82% eval time: 1.11s 
+09:25:35 ### epoch : 161 ###
+09:25:38 (train) class loss : 1.2966 domain loss : 0.0000 train time: 2.52s
+09:25:39 (eval) test accuracy: 14.97% eval time: 1.09s 
+09:25:39 ### epoch : 162 ###
+09:25:41 (train) class loss : 1.2407 domain loss : 0.0000 train time: 2.54s
+09:25:42 (eval) test accuracy: 10.31% eval time: 1.08s 
+09:25:42 ### epoch : 163 ###
+09:25:45 (train) class loss : 1.2588 domain loss : 0.0000 train time: 2.50s
+09:25:46 (eval) test accuracy: 12.96% eval time: 1.11s 
+09:25:46 ### epoch : 164 ###
+09:25:48 (train) class loss : 1.1787 domain loss : 0.0000 train time: 2.51s
+09:25:49 (eval) test accuracy: 12.45% eval time: 1.11s 
+09:25:49 ### epoch : 165 ###
+09:25:52 (train) class loss : 1.1367 domain loss : 0.0000 train time: 2.50s
+09:25:53 (eval) test accuracy: 14.21% eval time: 1.10s 
+09:25:53 ### epoch : 166 ###
+09:25:56 (train) class loss : 1.1262 domain loss : 0.0000 train time: 2.53s
+09:25:57 (eval) test accuracy: 11.19% eval time: 1.11s 
+09:25:57 ### epoch : 167 ###
+09:25:59 (train) class loss : 1.1064 domain loss : 0.0000 train time: 2.49s
+09:26:00 (eval) test accuracy: 13.46% eval time: 1.12s 
+09:26:00 ### epoch : 168 ###
+09:26:03 (train) class loss : 1.1340 domain loss : 0.0000 train time: 2.51s
+09:26:04 (eval) test accuracy: 9.43% eval time: 1.13s 
+09:26:04 ### epoch : 169 ###
+09:26:07 (train) class loss : 1.1572 domain loss : 0.0000 train time: 2.54s
+09:26:08 (eval) test accuracy: 12.08% eval time: 1.09s 
+09:26:08 ### epoch : 170 ###
+09:26:10 (train) class loss : 1.2551 domain loss : 0.0000 train time: 2.51s
+09:26:11 (eval) test accuracy: 10.69% eval time: 1.10s 
+09:26:11 ### epoch : 171 ###
+09:26:14 (train) class loss : 1.1678 domain loss : 0.0000 train time: 2.49s
+09:26:15 (eval) test accuracy: 13.08% eval time: 1.10s 
+09:26:15 ### epoch : 172 ###
+09:26:17 (train) class loss : 1.2317 domain loss : 0.0000 train time: 2.50s
+09:26:18 (eval) test accuracy: 12.45% eval time: 1.08s 
+09:26:18 ### epoch : 173 ###
+09:26:21 (train) class loss : 1.2872 domain loss : 0.0000 train time: 2.53s
+09:26:22 (eval) test accuracy: 12.96% eval time: 1.12s 
+09:26:22 ### epoch : 174 ###
+09:26:25 (train) class loss : 1.2060 domain loss : 0.0000 train time: 2.53s
+09:26:26 (eval) test accuracy: 14.21% eval time: 1.11s 
+09:26:26 ### epoch : 175 ###
+09:26:28 (train) class loss : 1.2191 domain loss : 0.0000 train time: 2.51s
+09:26:29 (eval) test accuracy: 11.45% eval time: 1.09s 
+09:26:29 ### epoch : 176 ###
+09:26:32 (train) class loss : 1.1410 domain loss : 0.0000 train time: 2.57s
+09:26:33 (eval) test accuracy: 11.45% eval time: 1.10s 
+09:26:33 ### epoch : 177 ###
+09:26:35 (train) class loss : 1.1668 domain loss : 0.0000 train time: 2.51s
+09:26:37 (eval) test accuracy: 10.57% eval time: 1.15s 
+09:26:37 ### epoch : 178 ###
+09:26:39 (train) class loss : 1.1121 domain loss : 0.0000 train time: 2.56s
+09:26:40 (eval) test accuracy: 12.45% eval time: 1.14s 
+09:26:40 ### epoch : 179 ###
+09:26:43 (train) class loss : 1.2333 domain loss : 0.0000 train time: 2.59s
+09:26:44 (eval) test accuracy: 13.84% eval time: 1.09s 
+09:26:44 ### epoch : 180 ###
+09:26:47 (train) class loss : 1.1868 domain loss : 0.0000 train time: 2.54s
+09:26:48 (eval) test accuracy: 14.21% eval time: 1.13s 
+09:26:48 ### epoch : 181 ###
+09:26:50 (train) class loss : 1.2212 domain loss : 0.0000 train time: 2.53s
+09:26:51 (eval) test accuracy: 11.95% eval time: 1.09s 
+09:26:51 ### epoch : 182 ###
+09:26:54 (train) class loss : 1.2199 domain loss : 0.0000 train time: 2.53s
+09:26:55 (eval) test accuracy: 14.09% eval time: 1.12s 
+09:26:55 ### epoch : 183 ###
+09:26:57 (train) class loss : 1.2361 domain loss : 0.0000 train time: 2.54s
+09:26:59 (eval) test accuracy: 12.20% eval time: 1.11s 
+09:26:59 ### epoch : 184 ###
+09:27:01 (train) class loss : 1.1773 domain loss : 0.0000 train time: 2.53s
+09:27:02 (eval) test accuracy: 13.33% eval time: 1.12s 
+09:27:02 ### epoch : 185 ###
+09:27:05 (train) class loss : 1.1636 domain loss : 0.0000 train time: 2.51s
+09:27:06 (eval) test accuracy: 12.08% eval time: 1.11s 
+09:27:06 ### epoch : 186 ###
+09:27:08 (train) class loss : 1.2061 domain loss : 0.0000 train time: 2.54s
+09:27:09 (eval) test accuracy: 12.33% eval time: 1.09s 
+09:27:09 ### epoch : 187 ###
+09:27:12 (train) class loss : 1.2232 domain loss : 0.0000 train time: 2.52s
+09:27:13 (eval) test accuracy: 10.94% eval time: 1.11s 
+09:27:13 ### epoch : 188 ###
+09:27:16 (train) class loss : 1.2066 domain loss : 0.0000 train time: 2.55s
+09:27:17 (eval) test accuracy: 12.20% eval time: 1.13s 
+09:27:17 ### epoch : 189 ###
+09:27:19 (train) class loss : 1.2197 domain loss : 0.0000 train time: 2.48s
+09:27:20 (eval) test accuracy: 8.68% eval time: 1.13s 
+09:27:20 ### epoch : 190 ###
+09:27:23 (train) class loss : 1.2987 domain loss : 0.0000 train time: 2.52s
+09:27:24 (eval) test accuracy: 13.46% eval time: 1.09s 
+09:27:24 ### epoch : 191 ###
+09:27:27 (train) class loss : 1.2441 domain loss : 0.0000 train time: 2.51s
+09:27:28 (eval) test accuracy: 12.08% eval time: 1.08s 
+09:27:28 ### epoch : 192 ###
+09:27:30 (train) class loss : 1.1788 domain loss : 0.0000 train time: 2.51s
+09:27:31 (eval) test accuracy: 14.84% eval time: 1.11s 
+09:27:31 ### epoch : 193 ###
+09:27:34 (train) class loss : 1.1702 domain loss : 0.0000 train time: 2.79s
+09:27:35 (eval) test accuracy: 11.57% eval time: 1.22s 
+09:27:35 ### epoch : 194 ###
+09:27:38 (train) class loss : 1.1972 domain loss : 0.0000 train time: 2.66s
+09:27:39 (eval) test accuracy: 12.58% eval time: 1.31s 
+09:27:39 ### epoch : 195 ###
+09:27:42 (train) class loss : 1.1785 domain loss : 0.0000 train time: 2.57s
+09:27:43 (eval) test accuracy: 8.68% eval time: 1.11s 
+09:27:43 ### epoch : 196 ###
+09:27:46 (train) class loss : 1.2191 domain loss : 0.0000 train time: 2.83s
+09:27:47 (eval) test accuracy: 10.82% eval time: 1.21s 
+09:27:47 ### epoch : 197 ###
+09:27:50 (train) class loss : 1.2241 domain loss : 0.0000 train time: 2.67s
+09:27:51 (eval) test accuracy: 14.72% eval time: 1.12s 
+09:27:51 ### epoch : 198 ###
+09:27:53 (train) class loss : 1.2191 domain loss : 0.0000 train time: 2.63s
+09:27:55 (eval) test accuracy: 14.97% eval time: 1.16s 
+09:27:55 ### epoch : 199 ###
+09:27:57 (train) class loss : 1.2693 domain loss : 0.0000 train time: 2.62s
+09:27:58 (eval) test accuracy: 11.45% eval time: 1.28s 
