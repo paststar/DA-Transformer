@@ -1,15 +1,11 @@
 import torch
 import torch.nn.functional as F
-import matplotlib.pyplot as plt
 
 from torch import nn
 from torch import Tensor
-from PIL import Image
-from torchvision.transforms import Compose, Resize, ToTensor
 from einops import rearrange, reduce, repeat
 from einops.layers.torch import Rearrange, Reduce
 from torchsummary import summary
-
 
 class PatchEmbedding(nn.Module):
     def __init__(self, in_channels: int = 3, patch_size: int = 16, emb_size: int = 768, img_size: int = 224):
@@ -17,23 +13,21 @@ class PatchEmbedding(nn.Module):
         super().__init__()
         self.projection = nn.Sequential(
             # using a conv layer instead of a linear one -> performance gains
-            nn.Conv2d(in_channels, emb_size, kernel_size=patch_size, stride=patch_size),
+            nn.Conv2d(in_channels, emb_size, kernel_size=patch_size, stride=patch_size), # original implemntation 이렇게 함
             Rearrange('b e (h) (w) -> b (h w) e'),
             # nn.Linear(patch_size * patch_size * in_channels, emb_size) # 논문대로 하면 이렇게 해야됨
         )
         self.cls_token = nn.Parameter(torch.randn(1, 1, emb_size))
-        self.positions = nn.Parameter(torch.randn((img_size // patch_size) ** 2 + 1, emb_size))
-        #self.domain_cls_token = nn.Parameter(torch.randn(1, 1, emb_size))
-        #self.positions = nn.Parameter(torch.randn((img_size // patch_size) ** 2 + 2, emb_size))
-
+        self.domain_cls_token = nn.Parameter(torch.randn(1, 1, emb_size))
+        self.positions = nn.Parameter(torch.randn((img_size // patch_size) ** 2 + 2, emb_size))
 
     def forward(self, x: Tensor) -> Tensor:
         b, _, _, _ = x.shape
         x = self.projection(x)
         cls_tokens = repeat(self.cls_token, '() n e -> b n e', b=b)
-        # prepend the cls token to the input
-        x = torch.cat([cls_tokens, x], dim=1)
-        # add position embedding
+        domain_cls_token = repeat(self.domain_cls_token, '() n e -> b n e', b=b)
+
+        x = torch.cat([cls_tokens,domain_cls_token, x], dim=1)
         x += self.positions
         return x
 
@@ -109,13 +103,25 @@ class TransformerEncoderBlock(nn.Sequential):
                 FeedForwardBlock(
                     emb_size, expansion=forward_expansion, drop_p=forward_drop_p),
                 nn.Dropout(drop_p)
-            )
-            )
+            ))
         )
 
 class TransformerEncoder(nn.Sequential):
     def __init__(self, depth: int = 12, **kwargs):
         super().__init__(*[TransformerEncoderBlock(**kwargs) for _ in range(depth)])
+
+class Classifier(nn.Module):
+    def __init__(self, emb_size: int = 768, n_classes: int = 1000, n_domin: int = 2):
+        super().__init__()
+        self.emb_size = emb_size
+        self.n_classes = n_classes
+        self.n_domin = n_domin
+
+        self.class_classifier = nn.Linear(emb_size, n_classes)
+        self.domain_classifier = nn.Linear(emb_size, n_domin)
+
+    def forward(self, x, **kwargs):
+        return self.class_classifier(x[:,0]), self.domain_classifier(x[:,1])
 
 class ClassificationHead(nn.Sequential):
     def __init__(self, emb_size: int = 768, n_classes: int = 1000):
@@ -124,7 +130,7 @@ class ClassificationHead(nn.Sequential):
             nn.LayerNorm(emb_size),
             nn.Linear(emb_size, n_classes))
 
-class ViT(nn.Sequential):
+class DeiT(nn.Sequential):
     def __init__(self,
                  in_channels: int = 3,
                  patch_size: int = 16,
@@ -137,10 +143,10 @@ class ViT(nn.Sequential):
         super().__init__(
             PatchEmbedding(in_channels, patch_size, emb_size, img_size),
             TransformerEncoder(depth, emb_size=emb_size,num_heads=num_heads, **kwargs),
-            ClassificationHead(emb_size, n_classes)
+            Classifier(emb_size, n_classes)
         )
 
-class ViT_tiny(nn.Sequential):
+class DeiT_tiny(nn.Sequential):
     def __init__(self,
                  in_channels: int = 3,
                  patch_size: int = 16,
@@ -153,11 +159,15 @@ class ViT_tiny(nn.Sequential):
         super().__init__(
             PatchEmbedding(in_channels, patch_size, emb_size, img_size),
             TransformerEncoder(depth, emb_size=emb_size, num_heads=num_heads, **kwargs),
-            ClassificationHead(emb_size, n_classes)
+            Classifier(emb_size, n_classes)
         )
 
 
 if __name__ == "__main__":
-    #summary(ViT(), (3, 224, 224), device='cpu')
-    summary(ViT_tiny(), (3, 224, 224), device='cpu')
+    summary(DeiT(), (3, 224, 224), device='cpu')
+    #summary(DeiT_tiny(), (3, 224, 224), device='cpu')
+
+    #test=DeiT()
+    #test(torch.zeros((16,3, 224, 224)))
+    #summary(ViT_tiny(), (3, 224, 224), device='cpu')
 

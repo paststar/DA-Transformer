@@ -46,9 +46,8 @@ def optimizer_scheduler(optimizer, p):
 
     return optimizer
 
-def evaluate(transformer, loader,_print):
+def evaluate(transformer, loader,epoch,best_acc, _print, writer):
     #_print("evaluating...")
-
     start = time.time()
 
     total = 0
@@ -59,11 +58,19 @@ def evaluate(transformer, loader,_print):
         for step, tgt_data in enumerate(loader):
             tgt_imgs, tgt_labels = tgt_data
             tgt_imgs, tgt_labels = tgt_imgs.cuda(non_blocking=True), tgt_labels.cuda(non_blocking=True)
-            tgt_preds =transformer(tgt_imgs)
+            tgt_preds = transformer(tgt_imgs)[0]
             pred = tgt_preds.argmax(dim=1, keepdim=True)
 
             correct += pred.eq(tgt_labels.long().view_as(pred)).sum().item()
             total += tgt_labels.size(0)
 
-    _print('(eval) test accuracy: {:.2f}% eval time: {:.2f}s '.format((correct / total) * 100, time.time() - start))
-    #_print("Eval time: {:.2f}s".format(time.time() - start))
+    eval_acc = (correct / total) * 100
+
+    if eval_acc > best_acc:
+        best_acc = eval_acc
+    _print('(eval) test accuracy: {:.2f}% eval time: {:.2f}s'.format(eval_acc,time.time() - start))
+    _print(' best accuracy: {:.2f} % '.format(best_acc))
+
+    writer.add_scalar('eval/test acc', eval_acc,epoch)
+    return best_acc
+
